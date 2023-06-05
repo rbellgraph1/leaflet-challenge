@@ -50,7 +50,7 @@ d3.json(queryUrl).then(function (data) {
                 fillColor: markerColor,
                 fillOpacity: 0.7, 
                 className: 'custom-circle-marker' // CSS class name
-            }).bindPopup(`Type: ${type}<br>Coordinates: ${coordinates}<br>Info: ${title}<br>Magnitude: ${depth}<br>`);
+            }).bindPopup(`Type: ${type}<br>Coordinates: ${coordinates}<br>Place: ${properties.place}<br>Magnitude: ${magnitude}<br>Depth: ${depth}<br>`);
         }
     }).addTo(myMap);
 
